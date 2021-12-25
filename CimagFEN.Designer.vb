@@ -1,0 +1,94 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class CimagFEN
+    Inherits System.Windows.Forms.Form
+
+    'Form remplace la méthode Dispose pour nettoyer la liste des composants.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requise par le Concepteur Windows Form
+    Private components As System.ComponentModel.IContainer
+
+    'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
+    'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
+    'Ne la modifiez pas à l'aide de l'éditeur de code.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CimagFEN))
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(13, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(347, 34)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Icone du bouton vérifier utilisé sous licence CC BY 4.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Auteur : Maxim Basinski"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(13, 51)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(457, 22)
+        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.Text = "Lien : https://icon-icons.com/fr/icone/vérifié/77964 | Licence : https://creative" &
+    "commons.org/licenses/by/4.0/legalcode"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 76)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(396, 34)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Icone du bouton balise fantôme utilisé sous licence CC BY 4.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Auteur : VisualPha" &
+    "rm"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(16, 113)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.Size = New System.Drawing.Size(457, 22)
+        Me.TextBox2.TabIndex = 3
+        Me.TextBox2.Text = "Lien : https://icon-icons.com/fr/icone/fantome/4976 | Licence : https://creativec" &
+    "ommons.org/licenses/by/4.0/legalcode"
+        '
+        'CimagFEN
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(482, 453)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "CimagFEN"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Crédits images"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+End Class
