@@ -271,6 +271,10 @@ Public Class Form1
             RichTextBox1.Find(":hd3:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<h3></h3>"
         End If
+        If RichTextBox1.Text.Contains(":hd4:") Then
+            RichTextBox1.Find(":hd4:", 0, RichTextBoxFinds.MatchCase)
+            RichTextBox1.SelectedText = "<h4></h4>"
+        End If
         If RichTextBox1.Text.Contains(":jst:") Then
             RichTextBox1.Find(":jst:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<script></script>"
