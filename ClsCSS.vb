@@ -36,11 +36,14 @@
     background-color: " + SColorT.Text + ";
     color: " + SColorT1.Text + ";
 "
-
+        EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "    font-family :  " + FFBox.Text + ";
+"
         If NonTaillePL.Checked = False Then
             EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "    font-size :  " + CountPX.Text + "px;
 "
         End If
+        EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "    text-align :  " + TAC.Text + ";
+"
         If NonLo.Checked = False Then
             EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "    height: " + CountLO.Text + "px;
 "
@@ -53,7 +56,9 @@
             EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "    background-image: " + ChImg.Text + "px;
 "
         End If
-        EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "}"
+        EdiCSS.RichTextBox1.Text = EdiCSS.RichTextBox1.Text + "}
+
+"
     End Sub
 
     Private Sub LoTB_Scroll(sender As Object, e As EventArgs) Handles LoTB.Scroll
@@ -62,12 +67,5 @@
 
     Private Sub LaTB_Scroll(sender As Object, e As EventArgs) Handles LaTB.Scroll
         CountLA.Text = LaTB.Value
-    End Sub
-
-    Private Sub NonTaillePL_CheckedChanged(sender As Object, e As EventArgs) Handles NonTaillePL.CheckedChanged
-        If NonTaillePL.Checked = True Then
-            EdiCSS.RichTextBox1.Find("    font-size: " + CountPX.Text + "px;", 0, RichTextBoxFinds.MatchCase)
-            EdiCSS.RichTextBox1.Cut()
-        End If
     End Sub
 End Class

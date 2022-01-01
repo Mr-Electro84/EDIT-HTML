@@ -249,42 +249,46 @@ Public Class Form1
             My.Settings.CodeHTML = False
         End If
         'Raccourcis texte
-        If RichTextBox1.Text.Contains(":txt:") Then
-            RichTextBox1.Find(":txt:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":p:") Then
+            RichTextBox1.Find(":p:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<p></p>"
         End If
-        If RichTextBox1.Text.Contains(":txt='") And RichTextBox1.Text.Contains("':") Then
-            RichTextBox1.Find(":txt='", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":p='") And RichTextBox1.Text.Contains("':") Then
+            RichTextBox1.Find(":p='", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<p>"
             RichTextBox1.Find("':", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "</p>"
         End If
-        If RichTextBox1.Text.Contains(":hd1:") Then
-            RichTextBox1.Find(":hd1:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":h1:") Then
+            RichTextBox1.Find(":h1:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<h1></h1>"
         End If
-        If RichTextBox1.Text.Contains(":hd2:") Then
-            RichTextBox1.Find(":hd2:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":h2:") Then
+            RichTextBox1.Find(":h2:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<h2></h2>"
         End If
-        If RichTextBox1.Text.Contains(":hd3:") Then
-            RichTextBox1.Find(":hd3:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":h3:") Then
+            RichTextBox1.Find(":h3:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<h3></h3>"
         End If
-        If RichTextBox1.Text.Contains(":hd4:") Then
-            RichTextBox1.Find(":hd4:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":h4:") Then
+            RichTextBox1.Find(":h4:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<h4></h4>"
         End If
-        If RichTextBox1.Text.Contains(":jst:") Then
-            RichTextBox1.Find(":jst:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":h5:") Then
+            RichTextBox1.Find(":h5:", 0, RichTextBoxFinds.MatchCase)
+            RichTextBox1.SelectedText = "<h5></h5>"
+        End If
+        If RichTextBox1.Text.Contains(":script:") Then
+            RichTextBox1.Find(":script:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<script></script>"
         End If
-        If RichTextBox1.Text.Contains(":css:") Then
-            RichTextBox1.Find(":css:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":style:") Then
+            RichTextBox1.Find(":style:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<style></style>"
         End If
-        If RichTextBox1.Text.Contains(":pack:") Then
-            RichTextBox1.Find(":pack:", 0, RichTextBoxFinds.MatchCase)
+        If RichTextBox1.Text.Contains(":widget:") Then
+            RichTextBox1.Find(":widget:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<html>"
         End If
         If RichTextBox1.Text.Contains("<html>") And My.Settings.CodeHTML = False Then
@@ -292,6 +296,7 @@ Public Class Form1
 "
 <head>
 <!-- Cette page web à été réalisée avec le logiciel EDIT'HTML, plus d'informations : https://vapps-line-std.github.io/eh/ -->
+<meta name=""generator"" content=""EDIT'HTML (version 2.5)"">
 <title>Votre titre de page ici</title>
 </head>
 <body>
@@ -299,6 +304,12 @@ Public Class Form1
 </body>
 </html>"
             My.Settings.CodeHTML = True
+        End If
+    End Sub
+
+    Private Sub Tab_Click_RTB1(sender As Object, e As KeyEventArgs) Handles RichTextBox1.KeyDown
+        If e.KeyCode = Keys.Tab And e.KeyCode = Keys.Control Then
+            RichTextBox1.Text = Strings.Left(RichTextBox1.Text, RichTextBox1.SelectionStart) & "    " & Strings.Mid(RichTextBox1.Text, RichTextBox1.SelectionStart + 1)
         End If
     End Sub
 
@@ -374,13 +385,17 @@ Public Class Form1
 
     Private Sub AperçuAvecWampServerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AperçuAvecWampServerToolStripMenuItem.Click
         Dim RepW
-        RepW = MsgBox("Votre chemin du répertoire WampServer est-il correct : " + My.Settings.CheminWamp, 4)
+        RepW = MsgBox("Votre chemin du répertoire WampServer est-il correct : " + My.Settings.CheminWamp, 3 + 32)
         If RepW = vbYes Then
-            If RichTextBox1.Text.Contains("<?php") Then
-                Process2.StartInfo.FileName = My.Settings.CheminWamp + "Preview.html"
-            Else Process2.StartInfo.FileName = My.Settings.CheminWamp + "Preview.php"
+            If Not System.IO.Directory.Exists(My.Settings.CheminWamp) Then
+                MsgBox("Le chemin d'accès est introuvable", 16, "Erreur")
+            Else
+                If RichTextBox1.Text.Contains("<?php") Then
+                    Process2.StartInfo.FileName = My.Settings.CheminWamp + "Preview.html"
+                Else Process2.StartInfo.FileName = My.Settings.CheminWamp + "Preview.php"
+                End If
+                Process2.Start()
             End If
-            Process2.Start()
         ElseIf RepW = vbNo Then
             CWamp.Visible = True
         End If

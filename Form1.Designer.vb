@@ -130,7 +130,7 @@ Partial Class Form1
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Fichier, Me.ToolStripDropDownButton1, Me.Insertion, Me.out, Me.aes})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1132, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1132, 27)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -141,7 +141,7 @@ Partial Class Form1
         Me.Fichier.Image = CType(resources.GetObject("Fichier.Image"), System.Drawing.Image)
         Me.Fichier.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Fichier.Name = "Fichier"
-        Me.Fichier.Size = New System.Drawing.Size(66, 28)
+        Me.Fichier.Size = New System.Drawing.Size(66, 24)
         Me.Fichier.Text = "Fichier"
         '
         'OuvrirToolStripMenuItem
@@ -188,7 +188,7 @@ Partial Class Form1
         '
         Me.VérificationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VérifierToolStripMenuItem})
         Me.VérificationToolStripMenuItem.Name = "VérificationToolStripMenuItem"
-        Me.VérificationToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.VérificationToolStripMenuItem.Size = New System.Drawing.Size(167, 26)
         Me.VérificationToolStripMenuItem.Text = "Vérification"
         '
         'VérifierToolStripMenuItem
@@ -204,32 +204,32 @@ Partial Class Form1
         Me.Insertion.Image = CType(resources.GetObject("Insertion.Image"), System.Drawing.Image)
         Me.Insertion.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Insertion.Name = "Insertion"
-        Me.Insertion.Size = New System.Drawing.Size(80, 28)
+        Me.Insertion.Size = New System.Drawing.Size(80, 24)
         Me.Insertion.Text = "Insertion"
         '
         'TitreToolStripMenuItem
         '
         Me.TitreToolStripMenuItem.Name = "TitreToolStripMenuItem"
-        Me.TitreToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.TitreToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.TitreToolStripMenuItem.Text = "Titre"
         '
         'ImageToolStripMenuItem
         '
         Me.ImageToolStripMenuItem.Name = "ImageToolStripMenuItem"
-        Me.ImageToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ImageToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.ImageToolStripMenuItem.Text = "Image"
         '
         'TableauToolStripMenuItem
         '
         Me.TableauToolStripMenuItem.Name = "TableauToolStripMenuItem"
-        Me.TableauToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.TableauToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.TableauToolStripMenuItem.Text = "Tableau"
         '
         'ClasseToolStripMenuItem
         '
         Me.ClasseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScriptVideToolStripMenuItem, Me.LienHypertexteToolStripMenuItem})
         Me.ClasseToolStripMenuItem.Name = "ClasseToolStripMenuItem"
-        Me.ClasseToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ClasseToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.ClasseToolStripMenuItem.Text = "Classe"
         '
         'ScriptVideToolStripMenuItem
@@ -248,13 +248,13 @@ Partial Class Form1
         '
         Me.CharsetToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UTF8ToolStripMenuItem})
         Me.CharsetToolStripMenuItem.Name = "CharsetToolStripMenuItem"
-        Me.CharsetToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CharsetToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.CharsetToolStripMenuItem.Text = "Charset"
         '
         'UTF8ToolStripMenuItem
         '
         Me.UTF8ToolStripMenuItem.Name = "UTF8ToolStripMenuItem"
-        Me.UTF8ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.UTF8ToolStripMenuItem.Size = New System.Drawing.Size(167, 26)
         Me.UTF8ToolStripMenuItem.Text = "ISO-8859-1"
         '
         'out
@@ -271,7 +271,7 @@ Partial Class Form1
         '
         Me.CouleurToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DuTexteToolStripMenuItem, Me.DeFondToolStripMenuItem})
         Me.CouleurToolStripMenuItem.Name = "CouleurToolStripMenuItem"
-        Me.CouleurToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CouleurToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.CouleurToolStripMenuItem.Text = "Couleur"
         '
         'DuTexteToolStripMenuItem
@@ -306,9 +306,9 @@ Partial Class Form1
         '
         Me.ToolStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Vérifier, Me.Apercu, Me.ToolStripSeparator5, Me.ann, Me.ret, Me.ToolStripSeparator7, Me.cpy, Me.cper, Me.cler, Me.tselect, Me.ToolStripSeparator1, Me.balvide, Me.BALFAN, Me.InsLI, Me.Ajoutcomm, Me.EncdUTF8, Me.ToolStripSeparator2, Me.P, Me.Titre, Me.txtgras, Me.ToolStripSeparator3, Me.instab, Me.Insimg, Me.ToolStripSeparator4, Me.ToolStripButton1})
-        Me.ToolStrip2.Location = New System.Drawing.Point(0, 31)
+        Me.ToolStrip2.Location = New System.Drawing.Point(0, 27)
         Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(1132, 31)
+        Me.ToolStrip2.Size = New System.Drawing.Size(1132, 27)
         Me.ToolStrip2.TabIndex = 1
         Me.ToolStrip2.Text = "ToolStrip2"
         '
@@ -625,7 +625,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(13, 410)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 17)
+        Me.Label1.Size = New System.Drawing.Size(112, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Liste des erreurs :"
         '

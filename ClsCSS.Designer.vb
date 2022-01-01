@@ -40,7 +40,7 @@ Partial Class ClsCSS
         Me.LoTB = New System.Windows.Forms.TrackBar()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.TAC = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.CountPX = New System.Windows.Forms.Label()
         Me.PxTB = New System.Windows.Forms.TrackBar()
@@ -51,7 +51,7 @@ Partial Class ClsCSS
         Me.SColorT = New System.Windows.Forms.TextBox()
         Me.SColor = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.FFBox = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.ColorDialog2 = New System.Windows.Forms.ColorDialog()
@@ -85,7 +85,7 @@ Partial Class ClsCSS
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(139, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 17)
+        Me.Label1.Size = New System.Drawing.Size(94, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Element cible :"
         '
@@ -103,7 +103,7 @@ Partial Class ClsCSS
         Me.ZE.Controls.Add(Me.LoTB)
         Me.ZE.Controls.Add(Me.Label8)
         Me.ZE.Controls.Add(Me.Label7)
-        Me.ZE.Controls.Add(Me.ComboBox2)
+        Me.ZE.Controls.Add(Me.TAC)
         Me.ZE.Controls.Add(Me.Label6)
         Me.ZE.Controls.Add(Me.CountPX)
         Me.ZE.Controls.Add(Me.PxTB)
@@ -114,7 +114,7 @@ Partial Class ClsCSS
         Me.ZE.Controls.Add(Me.SColorT)
         Me.ZE.Controls.Add(Me.SColor)
         Me.ZE.Controls.Add(Me.Label3)
-        Me.ZE.Controls.Add(Me.ComboBox1)
+        Me.ZE.Controls.Add(Me.FFBox)
         Me.ZE.Controls.Add(Me.Label2)
         Me.ZE.Location = New System.Drawing.Point(12, 58)
         Me.ZE.Name = "ZE"
@@ -128,7 +128,7 @@ Partial Class ClsCSS
         Me.NonImg.AutoSize = True
         Me.NonImg.Location = New System.Drawing.Point(558, 245)
         Me.NonImg.Name = "NonImg"
-        Me.NonImg.Size = New System.Drawing.Size(294, 21)
+        Me.NonImg.Size = New System.Drawing.Size(277, 20)
         Me.NonImg.TabIndex = 24
         Me.NonImg.Text = "Ne pas prendre en compte cette proptiété"
         Me.HelpTip.SetToolTip(Me.NonImg, "Cochez cette case si vous ne voulez pas prendre en compte cette propriété")
@@ -139,7 +139,7 @@ Partial Class ClsCSS
         Me.NonLa.AutoSize = True
         Me.NonLa.Location = New System.Drawing.Point(558, 196)
         Me.NonLa.Name = "NonLa"
-        Me.NonLa.Size = New System.Drawing.Size(294, 21)
+        Me.NonLa.Size = New System.Drawing.Size(277, 20)
         Me.NonLa.TabIndex = 23
         Me.NonLa.Text = "Ne pas prendre en compte cette proptiété"
         Me.HelpTip.SetToolTip(Me.NonLa, "Cochez cette case si vous ne voulez pas prendre en compte cette propriété")
@@ -150,7 +150,7 @@ Partial Class ClsCSS
         Me.NonLo.AutoSize = True
         Me.NonLo.Location = New System.Drawing.Point(558, 140)
         Me.NonLo.Name = "NonLo"
-        Me.NonLo.Size = New System.Drawing.Size(294, 21)
+        Me.NonLo.Size = New System.Drawing.Size(277, 20)
         Me.NonLo.TabIndex = 22
         Me.NonLo.Text = "Ne pas prendre en compte cette proptiété"
         Me.HelpTip.SetToolTip(Me.NonLo, "Cochez cette case si vous ne voulez pas prendre en compte cette propriété")
@@ -161,7 +161,7 @@ Partial Class ClsCSS
         Me.NonTaillePL.AutoSize = True
         Me.NonTaillePL.Location = New System.Drawing.Point(558, 59)
         Me.NonTaillePL.Name = "NonTaillePL"
-        Me.NonTaillePL.Size = New System.Drawing.Size(294, 21)
+        Me.NonTaillePL.Size = New System.Drawing.Size(277, 20)
         Me.NonTaillePL.TabIndex = 21
         Me.NonTaillePL.Text = "Ne pas prendre en compte cette proptiété"
         Me.HelpTip.SetToolTip(Me.NonTaillePL, "Cochez cette case si vous ne voulez pas prendre en compte cette propriété" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
@@ -172,7 +172,7 @@ Partial Class ClsCSS
         Me.CountLA.AutoSize = True
         Me.CountLA.Location = New System.Drawing.Point(84, 200)
         Me.CountLA.Name = "CountLA"
-        Me.CountLA.Size = New System.Drawing.Size(16, 17)
+        Me.CountLA.Size = New System.Drawing.Size(14, 16)
         Me.CountLA.TabIndex = 20
         Me.CountLA.Text = "0"
         '
@@ -181,7 +181,7 @@ Partial Class ClsCSS
         Me.CountLO.AutoSize = True
         Me.CountLO.Location = New System.Drawing.Point(96, 157)
         Me.CountLO.Name = "CountLO"
-        Me.CountLO.Size = New System.Drawing.Size(16, 17)
+        Me.CountLO.Size = New System.Drawing.Size(14, 16)
         Me.CountLO.TabIndex = 19
         Me.CountLO.Text = "0"
         '
@@ -197,7 +197,7 @@ Partial Class ClsCSS
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(10, 243)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(235, 17)
+        Me.Label9.Size = New System.Drawing.Size(218, 16)
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Image de fond (indiquer le chemin) :"
         '
@@ -222,7 +222,7 @@ Partial Class ClsCSS
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(9, 183)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 17)
+        Me.Label8.Size = New System.Drawing.Size(100, 16)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Largeur (en %) :"
         '
@@ -231,25 +231,25 @@ Partial Class ClsCSS
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(9, 140)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(113, 17)
+        Me.Label7.Size = New System.Drawing.Size(101, 16)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Hauteur (en %) :"
         '
-        'ComboBox2
+        'TAC
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Gauche", "Centre", "Droite"})
-        Me.ComboBox2.Location = New System.Drawing.Point(186, 102)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox2.TabIndex = 12
+        Me.TAC.FormattingEnabled = True
+        Me.TAC.Items.AddRange(New Object() {"left", "center", "right"})
+        Me.TAC.Location = New System.Drawing.Point(186, 102)
+        Me.TAC.Name = "TAC"
+        Me.TAC.Size = New System.Drawing.Size(121, 24)
+        Me.TAC.TabIndex = 12
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(6, 105)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(174, 17)
+        Me.Label6.Size = New System.Drawing.Size(164, 16)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Alignement des éléments :"
         '
@@ -258,7 +258,7 @@ Partial Class ClsCSS
         Me.CountPX.AutoSize = True
         Me.CountPX.Location = New System.Drawing.Point(124, 63)
         Me.CountPX.Name = "CountPX"
-        Me.CountPX.Size = New System.Drawing.Size(16, 17)
+        Me.CountPX.Size = New System.Drawing.Size(14, 16)
         Me.CountPX.TabIndex = 10
         Me.CountPX.Text = "0"
         '
@@ -275,7 +275,7 @@ Partial Class ClsCSS
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(7, 46)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(173, 17)
+        Me.Label5.Size = New System.Drawing.Size(160, 16)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Taille du texte (en pixels) :"
         '
@@ -300,7 +300,7 @@ Partial Class ClsCSS
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(12, 416)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 17)
+        Me.Label4.Size = New System.Drawing.Size(129, 16)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Couleur de 1er plan :"
         '
@@ -325,25 +325,25 @@ Partial Class ClsCSS
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(12, 391)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 17)
+        Me.Label3.Size = New System.Drawing.Size(107, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Couleur de fond :"
         '
-        'ComboBox1
+        'FFBox
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Serif", "Sans serif"})
-        Me.ComboBox1.Location = New System.Drawing.Point(134, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox1.TabIndex = 1
+        Me.FFBox.FormattingEnabled = True
+        Me.FFBox.Items.AddRange(New Object() {"serif", "sans-serif"})
+        Me.FFBox.Location = New System.Drawing.Point(134, 19)
+        Me.FFBox.Name = "FFBox"
+        Me.FFBox.Size = New System.Drawing.Size(121, 24)
+        Me.FFBox.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(7, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(121, 17)
+        Me.Label2.Size = New System.Drawing.Size(116, 16)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Famille de police :"
         '
@@ -390,7 +390,7 @@ Partial Class ClsCSS
     Friend WithEvents Label1 As Label
     Friend WithEvents ZE As GroupBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents FFBox As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ColorDialog1 As ColorDialog
     Friend WithEvents SColor As Button
@@ -403,7 +403,7 @@ Partial Class ClsCSS
     Friend WithEvents CountPX As Label
     Friend WithEvents PxTB As TrackBar
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents TAC As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents LoTB As TrackBar
     Friend WithEvents Label8 As Label
