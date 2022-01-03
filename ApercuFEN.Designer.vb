@@ -29,7 +29,7 @@ Partial Class ApercuFEN
         Me.AMobile = New System.Windows.Forms.Button()
         Me.AGrandEcran = New System.Windows.Forms.Button()
         Me.OwnNavigWeb = New System.Windows.Forms.Button()
-        Me.NWeb = New System.Windows.Forms.Panel()
+        Me.AfficheurWeb = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout()
         '
         'Refr
@@ -90,22 +90,23 @@ Partial Class ApercuFEN
         Me.OwnNavigWeb.Text = "Votre navigateur web"
         Me.OwnNavigWeb.UseVisualStyleBackColor = True
         '
-        'NWeb
+        'AfficheurWeb
         '
-        Me.NWeb.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.AfficheurWeb.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.NWeb.Location = New System.Drawing.Point(12, 61)
-        Me.NWeb.Name = "NWeb"
-        Me.NWeb.Size = New System.Drawing.Size(1108, 480)
-        Me.NWeb.TabIndex = 8
+        Me.AfficheurWeb.Location = New System.Drawing.Point(13, 62)
+        Me.AfficheurWeb.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.AfficheurWeb.Name = "AfficheurWeb"
+        Me.AfficheurWeb.Size = New System.Drawing.Size(1107, 479)
+        Me.AfficheurWeb.TabIndex = 8
         '
         'ApercuFEN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1132, 553)
-        Me.Controls.Add(Me.NWeb)
+        Me.Controls.Add(Me.AfficheurWeb)
         Me.Controls.Add(Me.OwnNavigWeb)
         Me.Controls.Add(Me.AGrandEcran)
         Me.Controls.Add(Me.AMobile)
@@ -124,5 +125,5 @@ Partial Class ApercuFEN
     Friend WithEvents AMobile As Button
     Friend WithEvents ADefaut As Button
     Friend WithEvents OwnNavigWeb As Button
-    Friend WithEvents NWeb As Panel
+    Friend WithEvents AfficheurWeb As WebBrowser
 End Class

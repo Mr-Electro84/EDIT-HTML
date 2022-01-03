@@ -1,8 +1,4 @@
-﻿Imports CefSharp.WinForms
-Imports CefSharp
-Public Class ApercuFEN
-
-    Private WithEvents browser As ChromiumWebBrowser
+﻿Public Class ApercuFEN
     Private Sub Apercu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not System.IO.Directory.Exists("C:\EDIT'HTML\Preview") Then
             System.IO.Directory.CreateDirectory("C:\EDIT'HTML\Preview")
@@ -11,28 +7,11 @@ Public Class ApercuFEN
             Process1.StartInfo.FileName = "C:\EDIT'HTML\Preview\Preview.php"
         End If
         Form1.RichTextBox1.SaveFile(Process1.StartInfo.FileName, RichTextBoxStreamType.PlainText)
-        'WebBrowser1.Navigate(Process1.StartInfo.FileName)
-    End Sub
-
-    Public Sub New()
-        InitializeComponent()
-
-        If My.Settings.InitWeb = False Then
-            Dim settings As New CefSettings()
-            CefSharp.Cef.Initialize(settings)
-            My.Settings.InitWeb = True
-        End If
-
-        browser = New ChromiumWebBrowser(Process1.StartInfo.FileName) With {
-            .Dock = DockStyle.Fill
-        }
-        NWeb.Controls.Add(browser)
-
+        AfficheurWeb.Navigate(Process1.StartInfo.FileName)
     End Sub
 
     Private Sub Refr_Click(sender As Object, e As EventArgs) Handles Refr.Click
-        'WebBrowser1.Refresh()
-        browser.Reload
+        AfficheurWeb.Refresh()
     End Sub
 
     Private Sub ADefaut_Click(sender As Object, e As EventArgs) Handles ADefaut.Click
