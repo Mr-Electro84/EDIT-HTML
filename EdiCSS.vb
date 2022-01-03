@@ -17,7 +17,7 @@
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        Form1.RichTextBox1.Text = Form1.RichTextBox1.Text + "<link rel=""stylesheet"" type=""text/css"" href=""nom du fichier.css"">"
+        Form1.RichTextBox1.Text = Strings.Left(Form1.RichTextBox1.Text, Form1.RichTextBox1.SelectionStart) & "<link rel=""stylesheet"" type=""text/css"" href=""nom du fichier.css"">" & Strings.Mid(Form1.RichTextBox1.Text, Form1.RichTextBox1.SelectionStart + 1)
     End Sub
 
     Private Sub EnrCSS_Click(sender As Object, e As EventArgs) Handles EnrCSS.Click
