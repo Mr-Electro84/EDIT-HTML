@@ -37,6 +37,7 @@ Partial Class CONTRIB
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -44,6 +45,7 @@ Partial Class CONTRIB
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
@@ -56,9 +58,9 @@ Partial Class CONTRIB
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 68)
+        Me.Label2.Location = New System.Drawing.Point(6, 63)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(208, 17)
+        Me.Label2.Size = New System.Drawing.Size(200, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "MrFloppyDisc (Co-développeur)"
         '
@@ -67,7 +69,7 @@ Partial Class CONTRIB
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(244, 17)
+        Me.Label1.Size = New System.Drawing.Size(229, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mr_Electro84 (Développeur principal)"
         '
@@ -87,7 +89,7 @@ Partial Class CONTRIB
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.Location = New System.Drawing.Point(7, 47)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(72, 17)
+        Me.LinkLabel2.Size = New System.Drawing.Size(67, 16)
         Me.LinkLabel2.TabIndex = 1
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Sundev79"
@@ -97,7 +99,7 @@ Partial Class CONTRIB
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Location = New System.Drawing.Point(7, 22)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(158, 17)
+        Me.LinkLabel1.Size = New System.Drawing.Size(151, 16)
         Me.LinkLabel1.TabIndex = 0
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Graven Développement"
@@ -122,7 +124,7 @@ Partial Class CONTRIB
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(7, 18)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(58, 17)
+        Me.Label9.Size = New System.Drawing.Size(52, 16)
         Me.Label9.TabIndex = 6
         Me.Label9.Text = "Quentin"
         '
@@ -131,7 +133,7 @@ Partial Class CONTRIB
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(7, 119)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(46, 17)
+        Me.Label8.Size = New System.Drawing.Size(43, 16)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "Juzoo"
         '
@@ -140,7 +142,7 @@ Partial Class CONTRIB
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(7, 102)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(74, 17)
+        Me.Label7.Size = New System.Drawing.Size(73, 16)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "EICAVAEC"
         '
@@ -149,7 +151,7 @@ Partial Class CONTRIB
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(7, 81)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(46, 17)
+        Me.Label6.Size = New System.Drawing.Size(43, 16)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "-Ruka"
         '
@@ -158,7 +160,7 @@ Partial Class CONTRIB
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(7, 60)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(67, 17)
+        Me.Label5.Size = New System.Drawing.Size(66, 16)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "villomega"
         '
@@ -167,7 +169,7 @@ Partial Class CONTRIB
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(7, 39)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(55, 17)
+        Me.Label4.Size = New System.Drawing.Size(54, 16)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Clemoo"
         '
@@ -178,6 +180,15 @@ Partial Class CONTRIB
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(776, 22)
         Me.TextBox1.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 79)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(193, 16)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "FrenchCamp (Co-développeur)"
         '
         'CONTRIB
         '
@@ -218,4 +229,5 @@ Partial Class CONTRIB
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents Label3 As Label
 End Class
