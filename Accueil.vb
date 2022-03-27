@@ -11,7 +11,7 @@
 
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -23,13 +23,22 @@
         System.Diagnostics.Process.Start("https://vappsline.jimdofree.com/nos-logiciels/edit-html/")
     End Sub
 
-    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
         Form1.Show()
         Me.Close()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Form1.Show()
+        Me.Close()
     End Sub
 End Class
