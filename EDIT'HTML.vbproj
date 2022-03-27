@@ -157,6 +157,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accueil.Designer.vb">
+      <DependentUpon>Accueil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApercuFEN.Designer.vb">
       <DependentUpon>ApercuFEN.vb</DependentUpon>
     </Compile>
@@ -254,6 +260,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApercuFEN.resx">
       <DependentUpon>ApercuFEN.vb</DependentUpon>
     </EmbeddedResource>
