@@ -325,6 +325,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="log-edithtml.ico" />
+    <None Include="Resources\log edithtml - Copier.png" />
     <None Include="Resources\log edithtml.png" />
   </ItemGroup>
   <ItemGroup>

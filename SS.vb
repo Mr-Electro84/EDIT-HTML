@@ -9,6 +9,8 @@
             'Form1.Visible = True
             Timer1.Enabled = False
             Me.Close()
+
+
         Else ProgressBar1.Value = ProgressBar1.Value + 5
         End If
 
