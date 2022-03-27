@@ -67,7 +67,7 @@ Partial Class SS
         Me.Version.AutoSize = True
         Me.Version.Location = New System.Drawing.Point(608, 13)
         Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(80, 17)
+        Me.Version.Size = New System.Drawing.Size(73, 16)
         Me.Version.TabIndex = 3
         Me.Version.Text = "Version 2.5"
         '

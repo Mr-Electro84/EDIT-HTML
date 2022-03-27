@@ -169,6 +169,7 @@
     <Compile Include="ApercuFEN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="ApropFEN.Designer.vb">
       <DependentUpon>ApropFEN.vb</DependentUpon>
     </Compile>
