@@ -3,18 +3,6 @@
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         System.Diagnostics.Process.Start("https://vappsline.jimdofree.com")
     End Sub
@@ -24,13 +12,8 @@
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-
         Form1.Show()
         Me.Close()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

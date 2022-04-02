@@ -117,6 +117,8 @@ Partial Class Form1
         Me.ToolTipG = New System.Windows.Forms.ToolTip(Me.components)
         Me.DescBaliseE = New System.Windows.Forms.TextBox()
         Me.Process2 = New System.Diagnostics.Process()
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FermerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.ToolStrip2.SuspendLayout()
         Me.ContextMenuStrip2.SuspendLayout()
@@ -137,7 +139,7 @@ Partial Class Form1
         'Fichier
         '
         Me.Fichier.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.Fichier.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirToolStripMenuItem, Me.EnregistrerToolStripMenuItem, Me.EnregistrerSousToolStripMenuItem, Me.AperçuToolStripMenuItem, Me.AperçuAvecWampServerToolStripMenuItem})
+        Me.Fichier.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirToolStripMenuItem, Me.EnregistrerToolStripMenuItem, Me.EnregistrerSousToolStripMenuItem, Me.AperçuToolStripMenuItem, Me.AperçuAvecWampServerToolStripMenuItem, Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem, Me.FermerToolStripMenuItem})
         Me.Fichier.Image = CType(resources.GetObject("Fichier.Image"), System.Drawing.Image)
         Me.Fichier.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.Fichier.Name = "Fichier"
@@ -147,31 +149,31 @@ Partial Class Form1
         'OuvrirToolStripMenuItem
         '
         Me.OuvrirToolStripMenuItem.Name = "OuvrirToolStripMenuItem"
-        Me.OuvrirToolStripMenuItem.Size = New System.Drawing.Size(261, 26)
+        Me.OuvrirToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.OuvrirToolStripMenuItem.Text = "Ouvrir"
         '
         'EnregistrerToolStripMenuItem
         '
         Me.EnregistrerToolStripMenuItem.Name = "EnregistrerToolStripMenuItem"
-        Me.EnregistrerToolStripMenuItem.Size = New System.Drawing.Size(261, 26)
+        Me.EnregistrerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.EnregistrerToolStripMenuItem.Text = "Enregistrer"
         '
         'EnregistrerSousToolStripMenuItem
         '
         Me.EnregistrerSousToolStripMenuItem.Name = "EnregistrerSousToolStripMenuItem"
-        Me.EnregistrerSousToolStripMenuItem.Size = New System.Drawing.Size(261, 26)
+        Me.EnregistrerSousToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.EnregistrerSousToolStripMenuItem.Text = "Enregistrer sous"
         '
         'AperçuToolStripMenuItem
         '
         Me.AperçuToolStripMenuItem.Name = "AperçuToolStripMenuItem"
-        Me.AperçuToolStripMenuItem.Size = New System.Drawing.Size(261, 26)
+        Me.AperçuToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.AperçuToolStripMenuItem.Text = "Aperçu"
         '
         'AperçuAvecWampServerToolStripMenuItem
         '
         Me.AperçuAvecWampServerToolStripMenuItem.Name = "AperçuAvecWampServerToolStripMenuItem"
-        Me.AperçuAvecWampServerToolStripMenuItem.Size = New System.Drawing.Size(261, 26)
+        Me.AperçuAvecWampServerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.AperçuAvecWampServerToolStripMenuItem.Text = "Aperçu avec WampServer"
         '
         'ToolStripDropDownButton1
@@ -802,6 +804,18 @@ Partial Class Form1
         Me.Process2.StartInfo.UserName = ""
         Me.Process2.SynchronizingObject = Me
         '
+        'FermerEtRevenirÀLécranDaccueilToolStripMenuItem
+        '
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Name = "FermerEtRevenirÀLécranDaccueilToolStripMenuItem"
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Text = "Fermer et revenir à l'écran d'accueil"
+        '
+        'FermerToolStripMenuItem
+        '
+        Me.FermerToolStripMenuItem.Name = "FermerToolStripMenuItem"
+        Me.FermerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
+        Me.FermerToolStripMenuItem.Text = "Fermer"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -929,4 +943,6 @@ Partial Class Form1
     Friend WithEvents DescBaliseE As TextBox
     Friend WithEvents AperçuAvecWampServerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Process2 As Process
+    Friend WithEvents FermerEtRevenirÀLécranDaccueilToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FermerToolStripMenuItem As ToolStripMenuItem
 End Class

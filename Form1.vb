@@ -438,4 +438,13 @@ Public Class Form1
     Private Sub SupprErr_Click(sender As Object, e As EventArgs) Handles SupprErr.Click
         ToutIgnorerToolStripMenuItem.PerformClick()
     End Sub
+
+    Private Sub FermerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub FermerEtRevenirÀLécranDaccueilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Click
+        Accueil.Visible = True
+        Me.Close()
+    End Sub
 End Class
