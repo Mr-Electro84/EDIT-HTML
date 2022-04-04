@@ -3,6 +3,7 @@
 Imports System.IO
 Imports System.Net
 Imports System.Text
+Imports System.Text.RegularExpressions
 Public Class Form1
 
     Private Sub Vérifier_Click(sender As Object, e As EventArgs) Handles Vérifier.Click
@@ -291,6 +292,10 @@ Public Class Form1
             RichTextBox1.Find(":widget:", 0, RichTextBoxFinds.MatchCase)
             RichTextBox1.SelectedText = "<html>"
         End If
+        If RichTextBox1.Text.Contains(":frame:") Then
+            RichTextBox1.Find(":widget:", 0, RichTextBoxFinds.MatchCase)
+            RichTextBox1.SelectedText = "<iframe>"
+        End If
         If RichTextBox1.Text.Contains("<html>") And My.Settings.CodeHTML = False Then
             RichTextBox1.Text = RichTextBox1.Text &
 "
@@ -306,7 +311,6 @@ Public Class Form1
             My.Settings.CodeHTML = True
         End If
     End Sub
-
     Private Sub Tab_Click_RTB1(sender As Object, e As KeyEventArgs) Handles RichTextBox1.KeyDown
         If e.KeyCode = Keys.Tab And e.KeyCode = Keys.Control Then
             RichTextBox1.Text = Strings.Left(RichTextBox1.Text, RichTextBox1.SelectionStart) & "    " & Strings.Mid(RichTextBox1.Text, RichTextBox1.SelectionStart + 1)
