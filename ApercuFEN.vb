@@ -1,4 +1,5 @@
-﻿Public Class ApercuFEN
+﻿Imports System.IO
+Public Class ApercuFEN
     Private Sub Apercu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not System.IO.Directory.Exists("C:\EDIT'HTML\Preview") Then
             System.IO.Directory.CreateDirectory("C:\EDIT'HTML\Preview")
@@ -6,7 +7,11 @@
         If Form1.RichTextBox1.Text.Contains("<?php") Then
             Process1.StartInfo.FileName = "C:\EDIT'HTML\Preview\Preview.php"
         End If
-        Form1.RichTextBox1.SaveFile(Process1.StartInfo.FileName, RichTextBoxStreamType.PlainText)
+        Using RedacteurAP As StreamWriter =
+            New StreamWriter(Process1.StartInfo.FileName)
+            RedacteurAP.Write(Form1.RichTextBox1.Text)
+        End Using
+        'Form1.RichTextBox1.SaveFile(Process1.StartInfo.FileName, RichTextBoxStreamType.PlainText)
         AfficheurWeb.Navigate(Process1.StartInfo.FileName)
     End Sub
 

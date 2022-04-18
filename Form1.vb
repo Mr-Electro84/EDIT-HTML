@@ -4,6 +4,7 @@ Imports System.IO
 Imports System.Net
 Imports System.Text
 Imports System.Text.RegularExpressions
+Imports System.Reflection
 Public Class Form1
 
     Private Sub Vérifier_Click(sender As Object, e As EventArgs) Handles Vérifier.Click
@@ -45,8 +46,10 @@ Public Class Form1
         OpenFileDialog1.Filter = "EDIT'HTML File(*.ehf)|*.ehf|Hyper Text Markup Langage(*.html)|*.html|Rich Text Format(*.rtf)|*.rtf"
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             If OpenFileDialog1.FileName.Contains(".htm") Then
-                My.Settings.CodeHTML = True
-                RichTextBox1.LoadFile(OpenFileDialog1.FileName, RichTextBoxStreamType.PlainText)
+                Dim fileReader As String
+                fileReader = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName, System.Text.Encoding.UTF8)
+                RichTextBox1.Text = fileReader
+                'RichTextBox1.LoadFile(OpenFileDialog1.FileName, RichTextBoxStreamType.PlainText)
             Else My.Settings.CodeHTML = True
                 RichTextBox1.LoadFile(OpenFileDialog1.FileName)
             End If
@@ -69,7 +72,11 @@ Public Class Form1
                 'NotifyIcon1.BalloonTipTitle = "Procédure à suivre"
                 'NotifyIcon1.BalloonTipText = "À présent collez le code dans bloc-notes et sauvegardez le fichier en tant que HTML"
                 'NotifyIcon1.ShowBalloonTip(10)
-                RichTextBox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.PlainText)
+                'RichTextBox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.PlainText)
+                Using Redacteur As StreamWriter =
+                    New StreamWriter(SaveFileDialog1.FileName)
+                    Redacteur.Write(RichTextBox1.Text)
+                End Using
             Else RichTextBox1.SaveFile(SaveFileDialog1.FileName)
             End If
         End If
