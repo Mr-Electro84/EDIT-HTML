@@ -206,8 +206,8 @@ Public Class Form1
     End Sub
 
     Private Sub EncdUTF8_Click(sender As Object, e As EventArgs) Handles EncdUTF8.Click
-        'Insertion de la balise ISO-8859-1
-        RichTextBox1.Text = Strings.Left(RichTextBox1.Text, RichTextBox1.SelectionStart) & "<meta charset=""ISO-8859-1"">" & Strings.Mid(RichTextBox1.Text, RichTextBox1.SelectionStart + 1)
+        'Insertion de la balise UTF-8
+        RichTextBox1.Text = Strings.Left(RichTextBox1.Text, RichTextBox1.SelectionStart) & "<meta charset=""UTF-8"">" & Strings.Mid(RichTextBox1.Text, RichTextBox1.SelectionStart + 1)
     End Sub
 
     Private Sub UTF8ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UTF8ToolStripMenuItem.Click

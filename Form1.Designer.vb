@@ -31,6 +31,8 @@ Partial Class Form1
         Me.EnregistrerSousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AperçuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AperçuAvecWampServerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FermerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.VérificationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VérifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -117,8 +119,6 @@ Partial Class Form1
         Me.ToolTipG = New System.Windows.Forms.ToolTip(Me.components)
         Me.DescBaliseE = New System.Windows.Forms.TextBox()
         Me.Process2 = New System.Diagnostics.Process()
-        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FermerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.ToolStrip2.SuspendLayout()
         Me.ContextMenuStrip2.SuspendLayout()
@@ -176,6 +176,18 @@ Partial Class Form1
         Me.AperçuAvecWampServerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
         Me.AperçuAvecWampServerToolStripMenuItem.Text = "Aperçu avec WampServer"
         '
+        'FermerEtRevenirÀLécranDaccueilToolStripMenuItem
+        '
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Name = "FermerEtRevenirÀLécranDaccueilToolStripMenuItem"
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
+        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Text = "Fermer et revenir à l'écran d'accueil"
+        '
+        'FermerToolStripMenuItem
+        '
+        Me.FermerToolStripMenuItem.Name = "FermerToolStripMenuItem"
+        Me.FermerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
+        Me.FermerToolStripMenuItem.Text = "Fermer"
+        '
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
@@ -212,26 +224,26 @@ Partial Class Form1
         'TitreToolStripMenuItem
         '
         Me.TitreToolStripMenuItem.Name = "TitreToolStripMenuItem"
-        Me.TitreToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.TitreToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.TitreToolStripMenuItem.Text = "Titre"
         '
         'ImageToolStripMenuItem
         '
         Me.ImageToolStripMenuItem.Name = "ImageToolStripMenuItem"
-        Me.ImageToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.ImageToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ImageToolStripMenuItem.Text = "Image"
         '
         'TableauToolStripMenuItem
         '
         Me.TableauToolStripMenuItem.Name = "TableauToolStripMenuItem"
-        Me.TableauToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.TableauToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.TableauToolStripMenuItem.Text = "Tableau"
         '
         'ClasseToolStripMenuItem
         '
         Me.ClasseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScriptVideToolStripMenuItem, Me.LienHypertexteToolStripMenuItem})
         Me.ClasseToolStripMenuItem.Name = "ClasseToolStripMenuItem"
-        Me.ClasseToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.ClasseToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ClasseToolStripMenuItem.Text = "Classe"
         '
         'ScriptVideToolStripMenuItem
@@ -250,14 +262,14 @@ Partial Class Form1
         '
         Me.CharsetToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UTF8ToolStripMenuItem})
         Me.CharsetToolStripMenuItem.Name = "CharsetToolStripMenuItem"
-        Me.CharsetToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.CharsetToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.CharsetToolStripMenuItem.Text = "Charset"
         '
         'UTF8ToolStripMenuItem
         '
         Me.UTF8ToolStripMenuItem.Name = "UTF8ToolStripMenuItem"
-        Me.UTF8ToolStripMenuItem.Size = New System.Drawing.Size(167, 26)
-        Me.UTF8ToolStripMenuItem.Text = "ISO-8859-1"
+        Me.UTF8ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.UTF8ToolStripMenuItem.Text = "UTF-8"
         '
         'out
         '
@@ -803,18 +815,6 @@ Partial Class Form1
         Me.Process2.StartInfo.StandardOutputEncoding = Nothing
         Me.Process2.StartInfo.UserName = ""
         Me.Process2.SynchronizingObject = Me
-        '
-        'FermerEtRevenirÀLécranDaccueilToolStripMenuItem
-        '
-        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Name = "FermerEtRevenirÀLécranDaccueilToolStripMenuItem"
-        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
-        Me.FermerEtRevenirÀLécranDaccueilToolStripMenuItem.Text = "Fermer et revenir à l'écran d'accueil"
-        '
-        'FermerToolStripMenuItem
-        '
-        Me.FermerToolStripMenuItem.Name = "FermerToolStripMenuItem"
-        Me.FermerToolStripMenuItem.Size = New System.Drawing.Size(325, 26)
-        Me.FermerToolStripMenuItem.Text = "Fermer"
         '
         'Form1
         '
