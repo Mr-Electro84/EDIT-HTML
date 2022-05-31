@@ -45,7 +45,7 @@ Partial Class IMG
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 198)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(114, 17)
+        Me.Label1.Size = New System.Drawing.Size(106, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Image à insérer :"
         '
@@ -63,7 +63,7 @@ Partial Class IMG
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(282, 17)
+        Me.Label2.Size = New System.Drawing.Size(268, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Nom de l'image (avec extenion de l'image) :"
         '
@@ -79,9 +79,9 @@ Partial Class IMG
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(12, 63)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(113, 17)
+        Me.Label3.Size = New System.Drawing.Size(112, 16)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Texte alterntive :"
+        Me.Label3.Text = "Texte alterantive :"
         '
         'Alt
         '

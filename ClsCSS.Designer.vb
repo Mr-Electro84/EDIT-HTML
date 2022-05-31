@@ -57,10 +57,17 @@ Partial Class ClsCSS
         Me.ColorDialog2 = New System.Windows.Forms.ColorDialog()
         Me.OK = New System.Windows.Forms.Button()
         Me.HelpTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.Dimensions = New System.Windows.Forms.TabPage()
+        Me.Perso = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.ZE.SuspendLayout()
         CType(Me.LaTB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoTB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PxTB, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl1.SuspendLayout()
+        Me.Dimensions.SuspendLayout()
+        Me.Perso.SuspendLayout()
         Me.SuspendLayout()
         '
         'Type
@@ -91,31 +98,8 @@ Partial Class ClsCSS
         '
         'ZE
         '
-        Me.ZE.Controls.Add(Me.NonImg)
-        Me.ZE.Controls.Add(Me.NonLa)
-        Me.ZE.Controls.Add(Me.NonLo)
-        Me.ZE.Controls.Add(Me.NonTaillePL)
-        Me.ZE.Controls.Add(Me.CountLA)
-        Me.ZE.Controls.Add(Me.CountLO)
-        Me.ZE.Controls.Add(Me.ChImg)
-        Me.ZE.Controls.Add(Me.Label9)
-        Me.ZE.Controls.Add(Me.LaTB)
-        Me.ZE.Controls.Add(Me.LoTB)
-        Me.ZE.Controls.Add(Me.Label8)
-        Me.ZE.Controls.Add(Me.Label7)
-        Me.ZE.Controls.Add(Me.TAC)
-        Me.ZE.Controls.Add(Me.Label6)
-        Me.ZE.Controls.Add(Me.CountPX)
-        Me.ZE.Controls.Add(Me.PxTB)
-        Me.ZE.Controls.Add(Me.Label5)
-        Me.ZE.Controls.Add(Me.SColorT1)
-        Me.ZE.Controls.Add(Me.SColor1)
-        Me.ZE.Controls.Add(Me.Label4)
-        Me.ZE.Controls.Add(Me.SColorT)
-        Me.ZE.Controls.Add(Me.SColor)
-        Me.ZE.Controls.Add(Me.Label3)
-        Me.ZE.Controls.Add(Me.FFBox)
-        Me.ZE.Controls.Add(Me.Label2)
+        Me.ZE.Controls.Add(Me.Label10)
+        Me.ZE.Controls.Add(Me.TabControl1)
         Me.ZE.Location = New System.Drawing.Point(12, 58)
         Me.ZE.Name = "ZE"
         Me.ZE.Size = New System.Drawing.Size(858, 454)
@@ -126,7 +110,7 @@ Partial Class ClsCSS
         'NonImg
         '
         Me.NonImg.AutoSize = True
-        Me.NonImg.Location = New System.Drawing.Point(558, 245)
+        Me.NonImg.Location = New System.Drawing.Point(554, 179)
         Me.NonImg.Name = "NonImg"
         Me.NonImg.Size = New System.Drawing.Size(277, 20)
         Me.NonImg.TabIndex = 24
@@ -137,7 +121,7 @@ Partial Class ClsCSS
         'NonLa
         '
         Me.NonLa.AutoSize = True
-        Me.NonLa.Location = New System.Drawing.Point(558, 196)
+        Me.NonLa.Location = New System.Drawing.Point(555, 234)
         Me.NonLa.Name = "NonLa"
         Me.NonLa.Size = New System.Drawing.Size(277, 20)
         Me.NonLa.TabIndex = 23
@@ -148,7 +132,7 @@ Partial Class ClsCSS
         'NonLo
         '
         Me.NonLo.AutoSize = True
-        Me.NonLo.Location = New System.Drawing.Point(558, 140)
+        Me.NonLo.Location = New System.Drawing.Point(555, 178)
         Me.NonLo.Name = "NonLo"
         Me.NonLo.Size = New System.Drawing.Size(277, 20)
         Me.NonLo.TabIndex = 22
@@ -159,7 +143,7 @@ Partial Class ClsCSS
         'NonTaillePL
         '
         Me.NonTaillePL.AutoSize = True
-        Me.NonTaillePL.Location = New System.Drawing.Point(558, 59)
+        Me.NonTaillePL.Location = New System.Drawing.Point(557, 97)
         Me.NonTaillePL.Name = "NonTaillePL"
         Me.NonTaillePL.Size = New System.Drawing.Size(277, 20)
         Me.NonTaillePL.TabIndex = 21
@@ -170,7 +154,7 @@ Partial Class ClsCSS
         'CountLA
         '
         Me.CountLA.AutoSize = True
-        Me.CountLA.Location = New System.Drawing.Point(84, 200)
+        Me.CountLA.Location = New System.Drawing.Point(92, 238)
         Me.CountLA.Name = "CountLA"
         Me.CountLA.Size = New System.Drawing.Size(14, 16)
         Me.CountLA.TabIndex = 20
@@ -179,7 +163,7 @@ Partial Class ClsCSS
         'CountLO
         '
         Me.CountLO.AutoSize = True
-        Me.CountLO.Location = New System.Drawing.Point(96, 157)
+        Me.CountLO.Location = New System.Drawing.Point(93, 195)
         Me.CountLO.Name = "CountLO"
         Me.CountLO.Size = New System.Drawing.Size(14, 16)
         Me.CountLO.TabIndex = 19
@@ -187,7 +171,7 @@ Partial Class ClsCSS
         '
         'ChImg
         '
-        Me.ChImg.Location = New System.Drawing.Point(252, 243)
+        Me.ChImg.Location = New System.Drawing.Point(248, 177)
         Me.ChImg.Name = "ChImg"
         Me.ChImg.Size = New System.Drawing.Size(300, 22)
         Me.ChImg.TabIndex = 18
@@ -195,7 +179,7 @@ Partial Class ClsCSS
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 243)
+        Me.Label9.Location = New System.Drawing.Point(6, 177)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(218, 16)
         Me.Label9.TabIndex = 17
@@ -203,15 +187,15 @@ Partial Class ClsCSS
         '
         'LaTB
         '
-        Me.LaTB.Location = New System.Drawing.Point(133, 183)
+        Me.LaTB.Location = New System.Drawing.Point(135, 221)
         Me.LaTB.Maximum = 100
         Me.LaTB.Name = "LaTB"
-        Me.LaTB.Size = New System.Drawing.Size(419, 56)
+        Me.LaTB.Size = New System.Drawing.Size(414, 56)
         Me.LaTB.TabIndex = 16
         '
         'LoTB
         '
-        Me.LoTB.Location = New System.Drawing.Point(138, 132)
+        Me.LoTB.Location = New System.Drawing.Point(135, 170)
         Me.LoTB.Maximum = 100
         Me.LoTB.Name = "LoTB"
         Me.LoTB.Size = New System.Drawing.Size(414, 56)
@@ -220,7 +204,7 @@ Partial Class ClsCSS
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(9, 183)
+        Me.Label8.Location = New System.Drawing.Point(6, 221)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(100, 16)
         Me.Label8.TabIndex = 14
@@ -229,7 +213,7 @@ Partial Class ClsCSS
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(9, 140)
+        Me.Label7.Location = New System.Drawing.Point(6, 178)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(101, 16)
         Me.Label7.TabIndex = 13
@@ -239,7 +223,7 @@ Partial Class ClsCSS
         '
         Me.TAC.FormattingEnabled = True
         Me.TAC.Items.AddRange(New Object() {"left", "center", "right"})
-        Me.TAC.Location = New System.Drawing.Point(186, 102)
+        Me.TAC.Location = New System.Drawing.Point(186, 119)
         Me.TAC.Name = "TAC"
         Me.TAC.Size = New System.Drawing.Size(121, 24)
         Me.TAC.TabIndex = 12
@@ -247,7 +231,7 @@ Partial Class ClsCSS
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 105)
+        Me.Label6.Location = New System.Drawing.Point(6, 122)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(164, 16)
         Me.Label6.TabIndex = 11
@@ -256,7 +240,7 @@ Partial Class ClsCSS
         'CountPX
         '
         Me.CountPX.AutoSize = True
-        Me.CountPX.Location = New System.Drawing.Point(124, 63)
+        Me.CountPX.Location = New System.Drawing.Point(150, 101)
         Me.CountPX.Name = "CountPX"
         Me.CountPX.Size = New System.Drawing.Size(14, 16)
         Me.CountPX.TabIndex = 10
@@ -264,7 +248,7 @@ Partial Class ClsCSS
         '
         'PxTB
         '
-        Me.PxTB.Location = New System.Drawing.Point(186, 49)
+        Me.PxTB.Location = New System.Drawing.Point(185, 87)
         Me.PxTB.Maximum = 100
         Me.PxTB.Name = "PxTB"
         Me.PxTB.Size = New System.Drawing.Size(366, 56)
@@ -273,7 +257,7 @@ Partial Class ClsCSS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 46)
+        Me.Label5.Location = New System.Drawing.Point(6, 84)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(160, 16)
         Me.Label5.TabIndex = 8
@@ -281,14 +265,14 @@ Partial Class ClsCSS
         '
         'SColorT1
         '
-        Me.SColorT1.Location = New System.Drawing.Point(368, 416)
+        Me.SColorT1.Location = New System.Drawing.Point(362, 256)
         Me.SColorT1.Name = "SColorT1"
         Me.SColorT1.Size = New System.Drawing.Size(189, 22)
         Me.SColorT1.TabIndex = 7
         '
         'SColor1
         '
-        Me.SColor1.Location = New System.Drawing.Point(159, 415)
+        Me.SColor1.Location = New System.Drawing.Point(153, 255)
         Me.SColor1.Name = "SColor1"
         Me.SColor1.Size = New System.Drawing.Size(202, 23)
         Me.SColor1.TabIndex = 6
@@ -298,7 +282,7 @@ Partial Class ClsCSS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 416)
+        Me.Label4.Location = New System.Drawing.Point(6, 256)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(129, 16)
         Me.Label4.TabIndex = 5
@@ -306,14 +290,14 @@ Partial Class ClsCSS
         '
         'SColorT
         '
-        Me.SColorT.Location = New System.Drawing.Point(368, 386)
+        Me.SColorT.Location = New System.Drawing.Point(362, 226)
         Me.SColorT.Name = "SColorT"
         Me.SColorT.Size = New System.Drawing.Size(189, 22)
         Me.SColorT.TabIndex = 4
         '
         'SColor
         '
-        Me.SColor.Location = New System.Drawing.Point(139, 386)
+        Me.SColor.Location = New System.Drawing.Point(133, 226)
         Me.SColor.Name = "SColor"
         Me.SColor.Size = New System.Drawing.Size(222, 23)
         Me.SColor.TabIndex = 3
@@ -323,7 +307,7 @@ Partial Class ClsCSS
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 391)
+        Me.Label3.Location = New System.Drawing.Point(6, 231)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 16)
         Me.Label3.TabIndex = 2
@@ -333,7 +317,7 @@ Partial Class ClsCSS
         '
         Me.FFBox.FormattingEnabled = True
         Me.FFBox.Items.AddRange(New Object() {"serif", "sans-serif"})
-        Me.FFBox.Location = New System.Drawing.Point(134, 19)
+        Me.FFBox.Location = New System.Drawing.Point(133, 42)
         Me.FFBox.Name = "FFBox"
         Me.FFBox.Size = New System.Drawing.Size(121, 24)
         Me.FFBox.TabIndex = 1
@@ -341,7 +325,7 @@ Partial Class ClsCSS
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 22)
+        Me.Label2.Location = New System.Drawing.Point(6, 45)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(116, 16)
         Me.Label2.TabIndex = 0
@@ -359,6 +343,70 @@ Partial Class ClsCSS
         'HelpTip
         '
         Me.HelpTip.IsBalloon = True
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.Dimensions)
+        Me.TabControl1.Controls.Add(Me.Perso)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 46)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(858, 408)
+        Me.TabControl1.TabIndex = 25
+        '
+        'Dimensions
+        '
+        Me.Dimensions.Controls.Add(Me.Label7)
+        Me.Dimensions.Controls.Add(Me.NonLa)
+        Me.Dimensions.Controls.Add(Me.TAC)
+        Me.Dimensions.Controls.Add(Me.Label8)
+        Me.Dimensions.Controls.Add(Me.Label6)
+        Me.Dimensions.Controls.Add(Me.NonLo)
+        Me.Dimensions.Controls.Add(Me.LoTB)
+        Me.Dimensions.Controls.Add(Me.LaTB)
+        Me.Dimensions.Controls.Add(Me.CountLA)
+        Me.Dimensions.Controls.Add(Me.CountLO)
+        Me.Dimensions.Location = New System.Drawing.Point(4, 25)
+        Me.Dimensions.Name = "Dimensions"
+        Me.Dimensions.Padding = New System.Windows.Forms.Padding(3)
+        Me.Dimensions.Size = New System.Drawing.Size(850, 379)
+        Me.Dimensions.TabIndex = 0
+        Me.Dimensions.Text = "Dimensions"
+        Me.Dimensions.UseVisualStyleBackColor = True
+        '
+        'Perso
+        '
+        Me.Perso.Controls.Add(Me.Label4)
+        Me.Perso.Controls.Add(Me.FFBox)
+        Me.Perso.Controls.Add(Me.NonTaillePL)
+        Me.Perso.Controls.Add(Me.Label2)
+        Me.Perso.Controls.Add(Me.NonImg)
+        Me.Perso.Controls.Add(Me.CountPX)
+        Me.Perso.Controls.Add(Me.Label3)
+        Me.Perso.Controls.Add(Me.PxTB)
+        Me.Perso.Controls.Add(Me.SColor)
+        Me.Perso.Controls.Add(Me.Label5)
+        Me.Perso.Controls.Add(Me.SColorT)
+        Me.Perso.Controls.Add(Me.SColor1)
+        Me.Perso.Controls.Add(Me.SColorT1)
+        Me.Perso.Controls.Add(Me.Label9)
+        Me.Perso.Controls.Add(Me.ChImg)
+        Me.Perso.Location = New System.Drawing.Point(4, 25)
+        Me.Perso.Name = "Perso"
+        Me.Perso.Padding = New System.Windows.Forms.Padding(3)
+        Me.Perso.Size = New System.Drawing.Size(850, 379)
+        Me.Perso.TabIndex = 1
+        Me.Perso.Text = "Personalisation"
+        Me.Perso.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(4, 24)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(200, 16)
+        Me.Label10.TabIndex = 26
+        Me.Label10.Text = "Veuillez vérifier tout les éléments"
         '
         'ClsCSS
         '
@@ -380,6 +428,11 @@ Partial Class ClsCSS
         CType(Me.LaTB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LoTB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PxTB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControl1.ResumeLayout(False)
+        Me.Dimensions.ResumeLayout(False)
+        Me.Dimensions.PerformLayout()
+        Me.Perso.ResumeLayout(False)
+        Me.Perso.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -418,4 +471,8 @@ Partial Class ClsCSS
     Friend WithEvents NonLo As CheckBox
     Friend WithEvents NonImg As CheckBox
     Friend WithEvents HelpTip As ToolTip
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents Dimensions As TabPage
+    Friend WithEvents Perso As TabPage
 End Class
