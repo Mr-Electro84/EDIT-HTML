@@ -1,4 +1,4 @@
-﻿'EDIT'HTML Version 2.5 2022 Vapps Line std, le projet est sous licence MIT
+﻿'EDIT'HTML Version 2.5 2023 Mr_Electro84, le projet est sous licence MIT
 'Modules complémentaires importés
 Imports System.IO
 Imports System.Net
